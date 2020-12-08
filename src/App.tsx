@@ -8,7 +8,6 @@ function App() {
       <Header
         title="App News"
       />
-
       <div
         className="container
        white">
