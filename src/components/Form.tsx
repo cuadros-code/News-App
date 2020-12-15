@@ -12,16 +12,19 @@ const OptionSelect = [
     {value:'technology', label:'technology' },  
  ]
 
-export const Form = () => {
+export const Form = ({ setSaveCategorie }: any ) => {
 
     const [stateSelect, SelectComponent ] = useSelect('general', OptionSelect );
 
-    
+    const handleSubmit = ( event : React.FormEvent ) => {
+        event.preventDefault();
+        setSaveCategorie(stateSelect);
+    }
 
     return (
         <div className={` row ${styles.buscador}`}>
             <div className="col s12 m8 offset-m2">
-                <form>
+                <form onSubmit={ handleSubmit }>
                     <h3 className={styles.heading} > categories</h3>
 
                     <SelectComponent />

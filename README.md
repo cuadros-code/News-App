@@ -1,6 +1,9 @@
 # Buscador de noticias 
 
-ver Demo [Create React App](https://github.com/facebook/create-react-app).
+ver [Demo](https://github.com/facebook/create-react-app).
 
+Puedes consultar tus noticias por categorias
+
+![captura]( cap-2.png)
 
 
