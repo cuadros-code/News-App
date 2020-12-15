@@ -3,9 +3,9 @@ import styles from './Form.module.css';
 import { useSelect } from '../hooks/useSelect';
 
 const OptionSelect = [ 
+    {value:'general', label:'general' },
     {value:'business', label:'business' },
     {value:'entertainment', label:'entertainment' },
-    {value:'general', label:'general' },
     {value:'health', label:'health' },
     {value:'science', label:'science' },  
     {value:'sports', label:'sports' },  
@@ -14,13 +14,15 @@ const OptionSelect = [
 
 export const Form = () => {
 
-    const [stateSelect, SelectComponent ] = useSelect('', OptionSelect );
+    const [stateSelect, SelectComponent ] = useSelect('general', OptionSelect );
+
+    
 
     return (
         <div className={` row ${styles.buscador}`}>
             <div className="col s12 m8 offset-m2">
                 <form>
-                    <h2 className={styles.heading} >Search by categories</h2>
+                    <h3 className={styles.heading} > categories</h3>
 
                     <SelectComponent />
 

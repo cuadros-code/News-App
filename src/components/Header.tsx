@@ -6,8 +6,8 @@ type HeaderProps = {
 
 export const Header= ( {title } : HeaderProps ) => {
     return (
-        <nav className="nav-wrapper light-blue darken-4" > 
-            <a href="#!" className="brand-logo center">{ title }</a>
-        </nav>
+        <div className="title" > 
+            <h3 className="brand-logo center">{ title }</h3>
+        </div>
     )
 }

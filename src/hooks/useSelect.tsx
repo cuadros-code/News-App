@@ -20,12 +20,12 @@ export const useSelect = (initialState: string, options: Array<{ value: string, 
             >
                 <option value="" disabled >Select Option</option>
                 {
-                    options.map( b => (
+                    options.map( option => (
                         <option
-                            value={b.value}
-                            key={b.value}
+                            value={option.value}
+                            key={option.value}
                         >
-                            { b.label}
+                            { option.label}
                         </option>))
                 }
             </select>
