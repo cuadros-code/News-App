@@ -15,6 +15,7 @@ function App() {
       const URL = `http://newsapi.org/v2/top-headlines?country=co&category=${saveCategorie}&apiKey=276435fcbb2a42768c0276a9b2dd57a5`;
       const result = await fetch( URL );
       const { articles } = await result.json();
+      // const  { articles }:any = await axios.get( URL );
       setResultNews( articles );
 
     }
